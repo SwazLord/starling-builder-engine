@@ -45,8 +45,6 @@ package {
 
         private function init():void
         {
-            Starling.handleLostContext = true;
-
             _starling = new Starling(Game, stage);
             _starling.showStats = true ;
             _starling.stage3D.addEventListener(Event.CONTEXT3D_CREATE, _start);
