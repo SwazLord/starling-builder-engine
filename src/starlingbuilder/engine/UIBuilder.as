@@ -638,7 +638,7 @@ package starlingbuilder.engine
                     if (name in view)
                         view[name] = obj;
                     else
-                        throw new Error("Property name not defined: ", name);
+                        throw new Error("Property name not defined: " + name);
                 }
             }
         }
