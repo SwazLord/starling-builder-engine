@@ -17,7 +17,7 @@
               "resolution":1
             }
           },
-          "name":"connect_popup",
+          "name":"_popup1",
           "scaleX":0.59,
           "scaleY":0.59,
           "x":60.97,
@@ -40,7 +40,7 @@
               "resolution":1
             }
           },
-          "name":"connect_popup",
+          "name":"_popup2",
           "scaleX":0.59,
           "scaleY":0.59,
           "x":118.18,
@@ -53,7 +53,7 @@
           "source":"connect_popup"
         },
         "params":{
-          "name":"connect_popup",
+          "name":"_popup3",
           "scaleX":0.59,
           "scaleY":0.59,
           "x":189.88,
@@ -64,7 +64,7 @@
     "cls":"starling.display.Sprite",
     "customParams":{},
     "params":{
-      "name":"root"
+      "name":"_root"
     }
   },
   "setting":{

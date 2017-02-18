@@ -161,8 +161,11 @@ package starlingbuilder.engine
                 if (isExternalSource(data))
                 {
                     var externalData:Object = _dataFormatter.read(_assetMediator.getExternalData(data.customParams.source));
-                    container.addChild(create(externalData) as DisplayObject);
+
+                    var res:Object = load(externalData);
+                    container.addChild(res.object as DisplayObject);
                     paramsDict[obj] = data;
+                    data.externalParams = res.params;
                 }
             }
 
@@ -500,9 +503,20 @@ package starlingbuilder.engine
 
             if (container)
             {
+                var dict:Dictionary;
+                
+                if (params && params.externalParams)
+                {
+                    dict = params.externalParams;
+                }
+                else
+                {
+                    dict = paramsDict;
+                }
+
                 for (var i:int = 0; i < container.numChildren; ++i)
                 {
-                    localizeTree(container.getChildAt(i), paramsDict);
+                    localizeTree(container.getChildAt(i), dict);
                 }
             }
         }

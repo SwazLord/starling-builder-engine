@@ -181,7 +181,7 @@
         "customParams":{},
         "params":{
           "height":110,
-          "name":"generic_button_blue",
+          "name":"_connectButton",
           "textFormat":{
             "cls":"starling.text.TextFormat",
             "customParams":{},
