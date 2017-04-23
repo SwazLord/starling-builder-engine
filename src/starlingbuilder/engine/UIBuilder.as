@@ -7,6 +7,8 @@
  */
 package starlingbuilder.engine
 {
+    import flash.utils.getQualifiedClassName;
+
     import starlingbuilder.engine.format.DefaultDataFormatter;
     import starlingbuilder.engine.format.IDataFormatter;
     import starlingbuilder.engine.format.StableJSONEncoder;
@@ -652,7 +654,7 @@ package starlingbuilder.engine
                     if (name in view)
                         view[name] = obj;
                     else
-                        throw new Error("Property name not defined: " + name);
+                        throw new Error("Property " + name + " not defined in " + getQualifiedClassName(view));
                 }
             }
         }
