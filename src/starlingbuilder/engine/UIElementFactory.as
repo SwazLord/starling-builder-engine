@@ -143,6 +143,8 @@ package starlingbuilder.engine
                     break;
                 case "feathers.data.ListCollection":
                 case "feathers.data.HierarchicalCollection":
+                case "feathers.data.ArrayCollection":
+                case "feathers.data.ArrayHierarchicalCollection":
                     cls = getDefinitionByName(clsName) as Class;
                     return new cls(param.data);
                 case "starlingbuilder.engine.IAssetMediator":
