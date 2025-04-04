@@ -657,6 +657,8 @@ package starlingbuilder.engine
                 {
                     if (name in view)
                         view[name] = obj;
+                        if(obj is ICustomClass) //if class is of interface ICustomClass then call init()
+                            view[name].init();
                     else
                         throw new Error("Property " + name + " not defined in " + getQualifiedClassName(view));
                 }

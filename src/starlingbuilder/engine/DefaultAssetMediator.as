@@ -11,7 +11,7 @@
 package starlingbuilder.engine
 {
     import starling.textures.Texture;
-    import starling.utils.AssetManager;
+    import starling.assets.AssetManager;
 
     /**
      * Default implementation of IAssetMediator
