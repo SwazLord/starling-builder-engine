@@ -664,10 +664,10 @@ package starlingbuilder.engine
                     if (name in view)
                     {
                         view[name] = obj;
-                        // if object is of interface ICustomComponent then call init()
+                        // if object is of interface ICustomComponent then call initComponent()
                         if (obj is ICustomComponent)
                         {
-                            view[name].init();
+                            view[name].initComponent();
                         }
                     }
                     else
